@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import LogoPP from "../images/logoPP.png";
 import User from "../images/usuario_default.png"
+import "../Styles/Navigation.css";
 
 export default class Navigation extends Component {
   render() {
     return (
-      <Navbar sticky="top" bg="light" expand="md">
+      <Navbar sticky="top" bg="#F6F6F6" expand="md">
         <Container>
           <Navbar.Brand href="">
             <img
@@ -19,11 +20,11 @@ export default class Navigation extends Component {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav variant="pills" activeKey="1">
-              <Nav.Item><Nav.Link eventKey="disabled" disabled href="/diario">Metas</Nav.Link></Nav.Item>
-              <Nav.Item><Nav.Link eventKey="disabled" disabled href="/diario">Foro</Nav.Link></Nav.Item>
-              <Nav.Item><Nav.Link eventKey="1" href="/diario">Diario</Nav.Link></Nav.Item>
+              <Nav.Item className="padding_butons"><Nav.Link eventKey="disabled" disabled href="/diario" className="textnavbar">Metas</Nav.Link></Nav.Item>
+              <Nav.Item className="padding_butons" ><Nav.Link eventKey="disabled" disabled href="/diario" className="textnavbar">Foro</Nav.Link></Nav.Item>
+              <Nav.Item className="padding_butons"><Nav.Link eventKey="1" href="/diario" className="textnavbar">Diario</Nav.Link></Nav.Item>
             </Nav>
-          <Navbar.Brand>
+          <Navbar.Brand className="padding_butons">
             <img
               src= {User}
               width="50"
