@@ -10,7 +10,7 @@ import CreateEntry from "./components/CreateEntry";
 function App() {
   return (
     <Router>
-      <Navigation />
+      <Navigation/>
       <Container>
         <Route path="/diario" exact component={Diary} />
         <Route path="/diario/nuevaEntrada" exact component={CreateEntry} />
